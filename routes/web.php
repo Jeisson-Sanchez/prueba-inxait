@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\DeparmentController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('form');
+// });
+
+Route::get('/', [CustomerController::class, 'index']);
+Route::get('/cities', [CityController::class, 'show']);
+Route::post('/createCustomer', [CustomerController::class, 'store']);
+Route::get('/winner', [CustomerController::class, 'winner']);
+Route::get('/export', [CustomerController::class, 'export']);

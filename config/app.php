@@ -15,6 +15,11 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    /**
+     * Api que consume las departamentos y las ciudades de colombia
+     */
+    'deparmentCity' => env('URL_API_DEPARMET_CITY', 'https://www.datos.gov.co/resource/xdk5-pm3f.json'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

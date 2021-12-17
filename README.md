@@ -64,3 +64,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instalación del proyecto
+
+1. Debera hacer el git clone de manera local
+2. Una vez en el proyecto ejecutar los comandos tales como:
+- composer i
+- npm i
+
+3. Configurar las variables en el .env de la base de datos
+4. Debera correr las migraciones junto con los seeder, de la siguiente manera: php artisan migrate --seed
+
+- API de los departamentos y ciudades: [Api](https://www.datos.gov.co/resource/xdk5-pm3f.json)
